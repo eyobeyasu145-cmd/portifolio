@@ -1,0 +1,185 @@
+
+
+
+
+
+
+.fixed-sidebar {
+    position: fixed;
+    right: 20px; 
+    z-index: 1050; /* Above Bootstrap's navbar (z-index 1030) */
+    
+    /* Vertical Centering Trick */
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between icons */
+}
+/* LIGHT MODE OVERRIDES */
+.light-mode {
+    /* Define new colors for the light theme */
+    --bg-main: #f0f4f8;      /* Very Light Gray/Blue */
+    --bg-card: #ffffff;      /* White Cards */
+    --text-color: #212529;   /* Dark Text */
+    --accent-color: #0d6efd; /* Use standard primary blue */
+}
+
+/* Apply light mode overrides to sections */
+.light-mode .bg-dark-section { 
+    background-color: var(--bg-main) !important; 
+    color: var(--text-color) !important;
+}
+.light-mode .project-card,
+.light-mode .custom-form-control { 
+    background-color: var(--bg-card) !important;
+    color: var(--text-color) !important;
+    border-color: #ced4da;
+}
+
+/* Change text color for dark text in light mode */
+.light-mode h1,
+.light-mode h2,
+.light-mode p {
+    color: var(--text-color) !important;
+}
+
+.sidebar-icon {
+    /* Styles for the circular button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #343a40; /* Dark color for icons */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar-icon:hover,
+.sidebar-icon.active {
+    background-color: #0d6efd; /* Blue/Primary color on hover/active */
+    color: #fff;
+    box-shadow: 0 0 15px rgba(3, 31, 74, 0.5);
+}
+
+
+ .bg-about-color {
+    background-color: #10263c; 
+}
+/* --- Hero Section (Colors/Background) --- */
+.hero-section {
+    background-color: #172a3a; /* Deep blue/dark background like Image 2 */
+    color: #fff;
+}
+
+.profile-circle {
+    width: 250px;
+    height: 250px;
+    max-width: 220px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0d6efd, #0d6efd); /* Placeholder color/gradient */
+    border: 2px solid #0d6efd; /* Blue border */
+}
+
+/* Styling for the bold, multi-colored name from Image 1 */
+.hero-section h1 span {
+    background: linear-gradient(45deg, #0d6efd, #e91e63); /* Blue to Pink/Purple gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.university-logo {
+    /* Sets a maximum size for the university logo */
+    max-width: 120px; 
+    height: auto;
+    border-radius: 5px; /* Optional: slight corner rounding */
+    /* Add border if you want the image to stand out, though not strictly in the source image */
+}
+/* Custom CSS for Footer Icons */
+.footer .social-icon {
+    /* Optional: Subtle transition for hover effect */
+    transition: color 0.2s ease-in-out; 
+}
+
+.footer .social-icon:hover {
+    color: #0d6efd !important; /* Change to primary color on hover */
+}
+
+/* Ensure the background is truly dark, matching the image */
+.bg-dark {
+    background-color: #161e27 !important; /* Darker than default Bootstrap dark */
+}
+/* Custom Styles for Project Section */
+
+/* Use the same dark background for the section */
+.bg-dark-section {
+    background-color: #1a232c; 
+}
+
+/* Style for the individual card container */
+.project-card {
+    background-color: #212c37; /* Slightly lighter than the section background */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift card on hover for a nice effect */
+}
+
+/* Placeholder for the image within the card */
+.project-img-placeholder {
+    /* To make the placeholder image section stand out */
+    border-radius: 5px;
+}
+
+/* Secondary dark badge styling */
+.badge.text-bg-secondary {
+    background-color: #495057 !important;
+    font-size: 0.8rem;
+}
+/* Custom Styles for Contact Form Controls */
+
+/* Override Bootstrap's default form input appearance */
+.custom-form-control {
+    background-color: #34404e; /* Darker background color for the input fields */
+    border: 1px solid #4a5766; /* Subtle border */
+    color: #fff; /* White text input color */
+    padding: 12px 15px;
+    border-radius: 8px; /* Slightly more rounded than default Bootstrap */
+}
+
+.text-area-size {
+    height: 150px !important;
+}
+/* skill */
+      
+        .skill-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .progress {
+            height: 6px;
+            background: #222;
+        }
+
+        .progress-bar {
+            background-color: #f4b400; /* yellow */
+            width: 0%;
+            transition: width 1.8s ease;
+        }
+
+        .skills-section {
+            padding: 80px 0;
+        }
+        .sirivennela-regular {
+  font-family: "Sirivennela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
