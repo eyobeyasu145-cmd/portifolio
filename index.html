@@ -1,359 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eyob Eyasu | Android Developer</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> 
-    
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nabla&family=Sirivennela&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Eyob Eyasu is a computer science student and software developer building thoughtful web and mobile experiences.">
+  <title>Eyob Eyasu | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header  bg-dark-section>  
-    <nav id="fixedSidebar" class="fixed-sidebar">
-        <a href="#home" class="sidebar-icon active" data-section="home">
-            <i class="bi bi-house-door-fill"></i>
-        </a>
-        <a href="#about" class="sidebar-icon" data-section="about">
-            <i class="bi bi-person-fill"></i>
-        </a>
-        <a href="#skills" class="sidebar-icon" data-section="skills">
-            <i class="bi bi-briefcase-fill"></i>
-        </a>
-        <a href="#contact" class="sidebar-icon" data-section="contact">
-            <i class="bi bi-envelope-fill"></i>
-        </a>
-    </nav>
-  
-<div class="container-fluid hero-section 
- p-2 h1 m-0 fixed-top bor" >
- <div class="row">
-    <div class="col-11 sirivennela-regular text-warning" > Eyob </div> 
-  <div class="col"> <button id="darkModeToggle" class="btn btn-dark toggle-button  m-0" title="Toggle Dark/Light Mode">
-    <i class="bi bi-moon-fill"></i> 
-</button></div>
- </div>
-<nav id="fixedSidebar" class="fixed-sidebar">
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-</div>
-<nav id="fixedSidebar" class="fixed-sidebar">
-    </nav>
-        
-        <section id="home" class="bg-dark-section  text-light d-flex align-items-center min-vh-100 p-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    
-                    <div class="col-lg-7 ">
-                        <h1 class="display-1 fw-bold">Eyob Eyasu</h1>
-                        <p class="fs-4 ">Computer Science Student | Android Developer</p>
-                        
-                        <div class="mt-4">
-                            <button class="btn btn-dark btn-lg me-3">Hire Me</button>
-                            <button class="btn btn-outline-light btn-lg">View My Work</button>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-5 d-lg-block text-center">
-                        <div class="">
-                           <img src="image/eyob.png" alt="Profile Picture" class="img-fluid rounded-circle">
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-</header>
-      
-
-<section id="about" class="py-5  shadow-lg p-3  bg-dark-section  text-light rounded bg-dark ">
-  <div class="container">
-    <div class="row align-items-center">
-      
-     <div class="   col-md-4 text-center mb-4 mb-md-0">
-        <img 
-          src="image/Dire-dawa.jpg" 
-          alt="Profile" 
-          class="profile-circle portfolio-img img-fluid w-75 w-md-50 w-xl-25 rounded-circle shadow"
-        >
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Eyob Eyasu, home"><span class="brand-mark">E</span> eyob<span class="brand-dot">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+      <div class="site-nav" id="site-nav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+          <i class="bi bi-sun" aria-hidden="true"></i>
+        </button>
       </div>
+    </nav>
+  </header>
 
-      <div class="col-md-8">
-        <h2 class="fw-bold mb-3  display-4 display-md-3 display-lg-2 portfolio-heading  ">About Me</h2>
-        <p class=" mb-0 fs-5 fs-xl-4 portfolio-heading">
-    
-          I am a motivated Computer Science student at Dire Dawa University with a strong passion 
-          for software development and problem-solving. I enjoy turning ideas into clean, 
-          functional, and user-friendly applications while continuously exploring new technologies.
-          I have hands-on experience in both front-end and back-end development, working with 
-          HTML, CSS, JavaScript, Bootstrap, jQuery, AJAX, Java, Python, C++, and SQL databases. 
-          I am always eager to build meaningful projects and grow my skills.
-
-          Currently, I am a 3rd-year student (pending graduation) focused on creating projects that 
-          reflect my creativity, technical ability, and ambition to become a well-rounded software developer.
-        </p>
-
-        <a href="#projects" class="btn btn-primary mt-3">View My Projects</a>
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow hero-intro"><span class="status-dot"></span> Computer Science Student &amp; Developer</p>
+        <h1 class="hero-title">Building digital<br>experiences that<br><span>make an impact.</span></h1>
+        <p class="hero-summary">I’m Eyob Eyasu, a developer who enjoys turning ideas into useful, intuitive web and mobile applications.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          <a class="button button-quiet" href="mailto:eyobeyasu363@gmail.com">Let’s talk <i class="bi bi-chat-dots" aria-hidden="true"></i></a>
+        </div>
+        <div class="hero-socials" aria-label="Social links">
+          <a href="https://github.com/eyobeyasu145-cmd" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/eyob-eyasu-551633335" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a href="https://t.me/NS11fresh" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
+          <span class="social-caption">Find me online</span>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-
-        <section id="projects" class="min-vh-100 p-5 pt-5 bg-dark-section text-light">
-    <div class="container">
-        
-        <h2 class="display-5 fw-bold text-center mb-5">
-            <i class="bi bi-briefcase me-3"></i> My Projects
-        </h2>
-        
-        <div class="row g-4">
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="project-card h-100 p-4">
-                    <img src="image/mobile-deplop.png" alt="Mobile App Development" class="img-fluid mb-3 project-img-placeholder">
-                    <h3 class="card-title fs-4 fw-bold text-primary">Mobile Application Development</h3>
-                    <p class="card-text text-light-subtle">
-                        Developed a comprehensive mobile app for iOS and Android using React Native. Focused on creating a seamless user experience, performance optimization, and integration with native device features. Implemented state management with Redux for a scalable and maintainable codebase.
-                    </p>
-                    <div class="mt-3">
-                        <span class="badge text-bg-secondary me-2">React Native</span>
-                        <span class="badge text-bg-secondary me-2">Android/iOS</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="project-card h-100 p-4">
-                    <img src="image/web-dev.png" alt="Website Design" class="img-fluid mb-3 project-img-placeholder">
-                    <h3 class="card-title fs-4 fw-bold text-primary">Website Design</h3>
-                    <p class="card-text text-light-subtle">
-                        Designed and built a responsive and interactive e-commerce website using the MERN stack (Node.js). The project included features like user authentication, product catalog, shopping cart, and a secure payment gateway. Focused on creating a visually appealing and user-friendly interface.
-                    </p>
-                    <div class="mt-3">
-                        
-                        <span class="badge text-bg-secondary me-2">Bootstrap</span>
-                        
-                        <span class="badge text-bg-secondary me-2">JQuery</span>
-                        <span class="badge text-bg-secondary">React.js</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="project-card h-100 p-4">
-                    <img src="image/JavaFX-project.png" alt="JavaFX Application" class="img-fluid mb-3 project-img-placeholder">
-                    <h3 class="card-title fs-4 fw-bold text-primary">JavaFX Application</h3>
-                    <p class="card-text text-light-subtle">
-                        Created a desktop inventory management system using JavaFX. The application provides features for tracking stock, managing orders, and generating reports. Designed with a clean and intuitive user interface following MVC architecture, and connected to a MySQL database for data persistence.
-                    </p>
-                    <div class="mt-3">
-                        <span class="badge text-bg-secondary me-2">JavaFX</span>
-                        <span class="badge text-bg-secondary me-2">MySQL</span>
-                     
-                    </div>
-                </div>
-            </div>
-            
+      <div class="hero-visual" aria-label="Portrait of Eyob Eyasu">
+        <div class="portrait-orbit orbit-one" aria-hidden="true"></div>
+        <div class="portrait-orbit orbit-two" aria-hidden="true"></div>
+        <div class="portrait-frame">
+          <img src="image/eyob.png" alt="Eyob Eyasu" class="hero-portrait">
         </div>
-        
-    </div>
-    <!-- skill -->
-     <section class="skills-section shadow-lg container my-3 px-3" id="skills">
-    <h2 class="text-center mb-3">My Skills</h2>
-    <p class="text-center text-secondary mb-5">
-        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
-    </p>
-
-    <div class="row g-5">
-
-        <div class="col-md-6">
-
-            <div class="d-flex justify-content-between skill-title">
-                <span>JavaScript</span> <span>90%</span>
-            </div>
-            <div class="progress mb-4">
-                <div class="progress-bar" data-value="90"></div>
-            </div>
-
-            <div class="d-flex justify-content-between skill-title">
-                <span>HTML</span> <span>95%</span>
-            </div>
-            <div class="progress mb-4">
-                <div class="progress-bar" data-value="95"></div>
-            </div>
-
-            <div class="d-flex justify-content-between skill-title">
-                <span>Python</span> <span>70%</span>
-            </div>
-            <div class="progress mb-4">
-                <div class="progress-bar" data-value="70"></div>
-            </div>
-
+        <div class="floating-card">
+          <span class="floating-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></span>
+          <span><strong>Curious by nature</strong><small>Always learning, always building</small></span>
         </div>
-
-        <div class="col-md-6">
-
-            <div class="d-flex justify-content-between skill-title">
-                <span>jQuery</span> <span>85%</span>
-            </div>
-            <div class="progress mb-4">
-                <div class="progress-bar" data-value="85"></div>
-            </div>
-
-            <div class="d-flex justify-content-between skill-title">
-                <span>CSS</span> <span>90%</span>
-            </div>
-            <div class="progress mb-4">
-                <div class="progress-bar" data-value="90"></div>
-            </div>
-
-            <div class="d-flex justify-content-between skill-title">
-                <span>Bootstrap</span> <span>90%</span>
-            </div>
-            <div class="progress mb-4">
-                <div class="progress-bar" data-value="80"></div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-     <!-- get in touch -->
-</section>
-       <section id="contact" class="min-vh-100 p-5 pt-5 bg-dark-section  text-light shadow-lg bg-dark bg-gradient">
-     <div class="container">
-      <div class="text-center">
-        <h2>Get in touch</h2>
-        <p class="lead">Questions? Do not hesitate to contact us.</p>
+        <span class="hero-spark spark-one" aria-hidden="true">✳</span>
+        <span class="hero-spark spark-two" aria-hidden="true">✦</span>
       </div>
-      <form class="row g-3 needs-validation" novalidate>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+    </section>
 
-      <div class="row justify-content-center my-5">
-        <div class="col-lg-6">
-          <form action="">
-           <div class="form-floating my-5">
-             <input
-             type="email"
-             id="email"
-             placeholder="my@email.com"
-             class="form-control"  required
-
-             />
-              <label for="email" class="form-label">Email:</label>
-              <div class="valid-feedback">Looks good!</div>
-            </div>
-
-            <div class="form-floating my-5">
-              <input
-                type="name"
-                id="name"
-                placeholder="e.g. Dawid"
-                class="form-control"
-              />
-              <label for="name" class="form-label">Name:</label>
-               <div class="valid-feedback">Looks good!</div>
-            </div>
-
-
-            <label for="subject" class="form=label">Subject</label>
-            <select name="subject" id="subject" class="form-select">
-              <option value="pricing">about me</option>
-              <option value="technical" selected>Technical question</option>
-              <option value="other">Other</option>
-            </select>
-
-            <div class="form-floating my-5">
-              <textarea
-                name="query"
-                id="query"
-                class="form-control text-area-size"
-                placeholder="Write a message"
-              ></textarea>
-
-              <label for="query">Write a message</label>
-                             <div class="valid-feedback">Looks good!</div>
-
-            </div>
-           
-<div class="text-center"></div>      
-<button type="submit" id="send" class="btn btn-outline-primary">Send!</button>
-<div class="position-fixed bottom-0 end-0 p-3 mb-3" style="z-index: 11">
-  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <strong class="me-auto">welcome to my portfolio</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body h3 bg-info ">
-      Thank you for your message.
-    </div>
-  </div>
-</div>   
-            </div>
-          </form>
+    <section class="section section-about" id="about">
+      <div class="section-shell about-layout">
+        <div class="about-image reveal">
+          <img src="image/Dire-dawa.jpg" alt="Dire Dawa University" loading="lazy">
+          <div class="image-caption"><i class="bi bi-geo-alt" aria-hidden="true"></i> Dire Dawa, Ethiopia</div>
         </div>
-    </form> </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">A little about me</p>
+          <h2 class="section-title">Technology, creativity<br>and a lot of <span>curiosity.</span></h2>
+          <p>I’m a Computer Science student at Dire Dawa University with a passion for software development and problem-solving. I enjoy shaping ideas into clean, functional, and user-friendly applications.</p>
+          <p>My experience spans front-end and back-end development, including HTML, CSS, JavaScript, Bootstrap, jQuery, AJAX, Java, Python, C++, and SQL. I’m currently focused on building meaningful projects and growing into a well-rounded software developer.</p>
+          <a class="text-link" href="#contact">More about working together <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-projects" id="projects">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Selected work</p><h2 class="section-title">Projects I’m proud of<span>.</span></h2></div>
+          <p>A few examples of the ideas and interfaces I’ve enjoyed bringing to life.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-image"><img src="image/mobile-deplop.png" alt="Mobile app development project" loading="lazy"><span class="project-number">01</span></div>
+            <div class="project-content">
+              <p class="project-type">Mobile · Product</p>
+              <h3>Mobile Application Development</h3>
+              <p>Developed a mobile experience for iOS and Android using React Native, with a focus on usability, performance, and native device features.</p>
+              <div class="tag-list"><span>React Native</span><span>Android / iOS</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="image/web-dev.png" alt="Website design project" loading="lazy"><span class="project-number">02</span></div>
+            <div class="project-content">
+              <p class="project-type">Web · E-commerce</p>
+              <h3>Website Design</h3>
+              <p>Designed a responsive e-commerce experience with product browsing, authentication, a shopping cart, and a focus on a clear user journey.</p>
+              <div class="tag-list"><span>Bootstrap</span><span>jQuery</span><span>React</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="image/JavaFX-project.png" alt="JavaFX inventory management application" loading="lazy"><span class="project-number">03</span></div>
+            <div class="project-content">
+              <p class="project-type">Desktop · Database</p>
+              <h3>JavaFX Application</h3>
+              <p>Created an inventory management application for tracking stock, managing orders, and generating reports, backed by a MySQL database.</p>
+              <div class="tag-list"><span>JavaFX</span><span>MySQL</span><span>MVC</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills" id="skills">
+      <div class="section-shell skills-layout">
+        <div class="skills-intro reveal">
+          <p class="eyebrow">What I work with</p>
+          <h2 class="section-title">Tools for turning<br>ideas into <span>reality.</span></h2>
+          <p>I keep learning and exploring new technologies, choosing the right tools to build thoughtful, reliable experiences.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item reveal"><span class="skill-icon"><i class="bi bi-braces" aria-hidden="true"></i></span><span>JavaScript</span><span class="skill-level">90%</span><div class="skill-track"><span style="--skill-level: 90%"></span></div></div>
+          <div class="skill-item reveal"><span class="skill-icon"><i class="bi bi-filetype-html" aria-hidden="true"></i></span><span>HTML</span><span class="skill-level">95%</span><div class="skill-track"><span style="--skill-level: 95%"></span></div></div>
+          <div class="skill-item reveal"><span class="skill-icon"><i class="bi bi-filetype-py" aria-hidden="true"></i></span><span>Python</span><span class="skill-level">70%</span><div class="skill-track"><span style="--skill-level: 70%"></span></div></div>
+          <div class="skill-item reveal"><span class="skill-icon"><i class="bi bi-filetype-css" aria-hidden="true"></i></span><span>CSS</span><span class="skill-level">90%</span><div class="skill-track"><span style="--skill-level: 90%"></span></div></div>
+          <div class="skill-item reveal"><span class="skill-icon"><i class="bi bi-bootstrap" aria-hidden="true"></i></span><span>Bootstrap</span><span class="skill-level">80%</span><div class="skill-track"><span style="--skill-level: 80%"></span></div></div>
+          <div class="skill-item reveal"><span class="skill-icon"><i class="bi bi-code-square" aria-hidden="true"></i></span><span>jQuery</span><span class="skill-level">85%</span><div class="skill-track"><span style="--skill-level: 85%"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="section-shell contact-panel reveal">
+        <div class="contact-decoration" aria-hidden="true">✳</div>
+        <p class="eyebrow">Have an idea?</p>
+        <h2 class="section-title">Let’s make something<br><span>meaningful.</span></h2>
+        <p>I’m always happy to connect, talk through an idea, or explore a new opportunity.</p>
+        <a class="button button-primary" href="mailto:eyobeyasu363@gmail.com?subject=Hello%20Eyob">Get in touch <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <a class="brand" href="#home"><span class="brand-mark">E</span> eyob<span class="brand-dot">.</span></a>
+      <p>Designed and built by Eyob Eyasu · <span id="current-year">2026</span></p>
+      <a class="footer-email" href="mailto:eyobeyasu363@gmail.com">Say hello <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
     </div>
+  </footer>
 
-</section>
-</main>
-  <footer class="footer mt-auto py-3  bg-dark fixed-bottom ">
-<div class=" d-flex justify-content-between mx-5">
-<div class="">
-<span class="text-secondary">@2025 Eyob All rights reserved
-  
-  <a href="mailto:eyobeyasu363@gmail.com?subject=Hello&body=I%20visited%20your%20portfolio%20website.">
-    eyobeyasu.com
-</a></span>
-
-</div>
-    <div class=" "> 
-        
-<a href="https://t.me/NS11fresh" target="_blank" rel="noopener noreferrer" class="text-decoration-none m-1">
-  <i class="bi bi-telegram"></i>
-</a>
-<a href="https://github.com/eyobeyasu145-cmd" target="_blank" rel="noopener noreferrer" class=" text-decoration-none ">
-  <i class="text-decoration-none  bi-github" rel="noopener noreferrer" ></i>
-</a>
-<a href="https://www.linkedin.com/in/eyob-eyasu-551633335?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bv7Sso0duR96ksJ3zbbV4NQ%3D%3D" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-  <i class=" bi bi-linkedin"></i>
-</a> 
-    </div>  </div>
-</footer> 
-     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
-          <script src="js/bootstrap.js"></script>
-      <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
